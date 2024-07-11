@@ -9,11 +9,13 @@
 // If the compared type doesn't implement `Debug`, it doesn't know how to represent them!
 
 #[derive(PartialEq)]
+#[derive(Debug)]
 struct Ticket {
     title: String,
     description: String,
     status: String,
 }
+
 
 #[cfg(test)]
 mod tests {
